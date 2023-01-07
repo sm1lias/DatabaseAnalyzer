@@ -35,7 +35,11 @@ class TableAdapter() : RecyclerView.Adapter<MyViewHolder>() {
 class MyViewHolder(private val binding: TableItemBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(timeStamp: TimeStamp) {
         binding.apply {
-            txtTest.text = timeStamp.toString()
+            txtTime.text = timeStamp.time
+            txtLocation.text = "${timeStamp.location.latitude}, ${timeStamp.location.longitude} ${timeStamp.location.area}"
+            txtData.text = timeStamp.data.joinToString(", ")
+            txtVideoTitle.text = timeStamp.title
+            txtTimeCaptured.text = timeStamp.timeCaptured
         }
     }
 }

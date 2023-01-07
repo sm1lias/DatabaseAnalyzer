@@ -12,7 +12,7 @@ data class TimeStampDto(
 
 fun TimeStampDto.toTimeStamp(): TimeStamp {
     return TimeStamp(
-        data = data.joinToString(","),
+        data = data,
         location = location,
         time = time,
         title = title,

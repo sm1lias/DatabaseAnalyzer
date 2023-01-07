@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import comsmilias.example.databaseanalyzer.TableFragmentViewModel
 import comsmilias.example.databaseanalyzer.databinding.FragmentTableBinding
@@ -56,6 +57,7 @@ class TableFragment : Fragment() {
         binding.rvTable.layoutManager = LinearLayoutManager(requireContext())
         tableAdapter = TableAdapter()
         binding.rvTable.adapter = tableAdapter
+        binding.rvTable.addItemDecoration(DividerItemDecoration(binding.rvTable.context, DividerItemDecoration.VERTICAL))
     }
 
     override fun onDestroyView() {
