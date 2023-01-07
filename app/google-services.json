@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "417007112044",
+    "firebase_url": "https://learnit-31f85-default-rtdb.firebaseio.com",
+    "project_id": "learnit-31f85",
+    "storage_bucket": "learnit-31f85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417007112044:android:ba9c9d4868d3b548a6ed49",
+        "android_client_info": {
+          "package_name": "com.example.firebasereader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6S05l2aPVRD3NSTaPL2XwChKhspDWwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417007112044:android:d31f5ad372e0e48da6ed49",
+        "android_client_info": {
+          "package_name": "com.smilias.learnit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6S05l2aPVRD3NSTaPL2XwChKhspDWwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417007112044:android:cecdc904b8d85a60a6ed49",
+        "android_client_info": {
+          "package_name": "comsmilias.example.databaseanalyzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6S05l2aPVRD3NSTaPL2XwChKhspDWwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417007112044-up6j5bn47qclo5gfve3j38nfjhf08t1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
