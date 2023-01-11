@@ -40,6 +40,9 @@ android {
 
 dependencies {
 
+    //rx binding
+    implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+
     //dagger-hilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"

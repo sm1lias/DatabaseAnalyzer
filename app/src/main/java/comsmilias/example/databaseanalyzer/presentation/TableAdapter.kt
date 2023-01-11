@@ -30,6 +30,9 @@ class TableAdapter() : RecyclerView.Adapter<MyViewHolder>() {
         tableData.clear()
         tableData.addAll(list)
     }
+
+    fun getList() = tableData
+
 }
 
 class MyViewHolder(private val binding: TableItemBinding) : RecyclerView.ViewHolder(binding.root) {

@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".presentation.TableFragment">
 
+    <SearchView
+        android:id="@+id/btn_search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        android:padding="4dp"
+        android:queryHint="@string/search_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTable"
         android:layout_width="0dp"
@@ -14,5 +25,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
 </androidx.constraintlayout.widget.ConstraintLayout>
