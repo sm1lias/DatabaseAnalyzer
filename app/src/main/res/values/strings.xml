@@ -44,4 +44,6 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="search_location">Search Location</string>
+    <string name="results">Results</string>
+    <string name="database">Database</string>
 </resources>
