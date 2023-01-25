@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import comsmilias.example.databaseanalyzer.databinding.FragmentResultsBinding
+import comsmilias.example.databaseanalyzer.domain.model.TimeStamp
+import timber.log.Timber
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -31,6 +33,8 @@ class ResultsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val list = arguments?.getParcelableArrayList<TimeStamp>("data")
 
 //        binding.buttonSecond.setOnClickListener {
 //            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)

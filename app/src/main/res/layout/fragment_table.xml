@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".presentation.TableFragment">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/tBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="@string/database"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <SearchView
         android:id="@+id/btn_search"
         android:layout_width="0dp"
@@ -15,7 +32,7 @@
         android:queryHint="@string/search_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tBar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTable"

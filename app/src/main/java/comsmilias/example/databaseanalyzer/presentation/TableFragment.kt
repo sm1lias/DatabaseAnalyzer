@@ -6,9 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jakewharton.rxbinding4.widget.queryTextChanges
+import comsmilias.example.databaseanalyzer.R
 import comsmilias.example.databaseanalyzer.TableFragmentViewModel
 import comsmilias.example.databaseanalyzer.databinding.FragmentTableBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,6 +53,19 @@ class TableFragment : Fragment() {
                 Timber.i("_____________________ $users")
                 tableAdapter.setList(users)
                 tableAdapter.notifyDataSetChanged()
+            }
+        }
+
+        binding.toolbar.inflateMenu(R.menu.menu_main)
+        binding.toolbar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.action_results -> {
+                    val bundle = Bundle()
+                    bundle.putParcelableArrayList("data", ArrayList(viewModel.users.value))
+                    findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
+                    true
+                }
+                else -> false
             }
         }
 
